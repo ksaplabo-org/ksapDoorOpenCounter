@@ -3,10 +3,12 @@
 ## 目次  
 - [概要説明](#content1)  
 - [リードスイッチの使い方](#content2)  
-- [配線接続](#content3)
-- [ESP32のコーディング](#content4)  
-- [Raspberry Piのコーディング](#content5)  
-- [残課題](#content6)  
+- [ENピンについて](#content3)
+- [配線接続](#content4)
+- [ESP32のコーディング](#content5)  
+- [Raspberry Piのコーディング](#content6)  
+- [残課題](#content7)  
+- [参考まとめ](#content8)  
 
 <h2 id="content1">概要説明</h2>  
 
@@ -86,7 +88,7 @@ setup()
 ↓  
 loop()  
 <br>
-の順で処理が行われ、loop()は電源がついている間処理し続けられるが  
+の順で処理が行われ、loop()は電源がついている間処理が続くが  
 このloop()中に電気信号が送られると  
 <br>
 ESP32の電源ON  
@@ -103,7 +105,7 @@ loop()
 <br>
 のように、setup()の処理から行われる  
 
-<h2 id="content3">配線接続</h2>  
+<h2 id="content4">配線接続</h2>  
 ESP32とリードスイッチの配線図の配線を行う。  
 
 ![A](./img/counter.png)  
@@ -115,7 +117,7 @@ ESP32とリードスイッチの配線図の配線を行う。
 ![A](./img/espcounter.png)  
 ![B](./img/espcounter2.png)  
 
-<h2 id="content4">ESP32のコーディング</h2>  
+<h2 id="content5">ESP32のコーディング</h2>  
 
 ESP32にソースをコンパイルするIDEの使い方については以下を参照する  
 https://github.com/ksaplabo-org/ksapDoorOpener#content3  
@@ -134,7 +136,7 @@ ESP32からRaspberry PiへBluetooth接続を行うソース
 ソースコードについて参考にしたサイトを示す  
 https://taku-info.com/bleconnection-esp32andrpi/  
 
-<h2 id="content5">Raspberry Piのコーディング</h2>  
+<h2 id="content6">Raspberry Piのコーディング</h2>  
 
 Raspberry PiのOSセットアップ方法については以下を参考にする  
 https://github.com/ksaplabo-org/Raspi-Setup  
@@ -169,12 +171,12 @@ Raspberry Piに以下のソースを移行し、ターミナルで「main.py」�
 最終的な設置は以下のようになる  
 <img alt="リードサンプル" src="./img/doorcounter.jpg" width="400" height="600">   
 
-<h2 id="content6">残課題</h2>  
+<h2 id="content7">残課題</h2>  
 
 - ドアを開けた時にESP32とRaspberry Piの接続が100%成功するわけではなく  
    50％くらいの確率で成功する  
 - ESP32のENピンを利用しているため、ドアが閉まる前にLEDが消灯する   
 
-<h2 id="content7">参考まとめ</h2>  
+<h2 id="content8">参考まとめ</h2>  
 以下のサイトにESP32とRaspberry Piの接続についてまとめています。  
 https://github.com/camelrush/esp32_samples/tree/master/esp32_ble_toRaspi  
