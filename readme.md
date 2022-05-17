@@ -39,7 +39,7 @@ Raspberry PiからDynamoDBへ現在時刻をMQTT送信
 
 以下のサンプルソースをRaspberry Piで実行→[Rtest.py](./py/Rtest.py)    
 
-```python
+```python{r, attr.source='.numberLines'}
 import RPi.GPIO as GPIO
 import time
 
@@ -70,3 +70,10 @@ ESP32とリードスイッチの配線図の配線を行う。
 
 ![A](./img/espcounter.png)  
 ![B](./img/espcounter2.png)  
+
+<h2 id="content4">ESP32のセッティング</h2>  
+
+以下に参考にしたサイトを示す  
+https://taku-info.com/bleconnection-esp32andrpi/
+
+ESP32からRaspberry PiへBluetooth接続を行うソース  
