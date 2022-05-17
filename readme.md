@@ -63,5 +63,10 @@ while True:
 ESP32とリードスイッチの配線図の配線を行う。  
 
 ![A](./img/counter.png)  
-
 ![B](./img/Counter2.png)  
+
+このブレッドボードの上に下図のようにESP32を接続する。  
+(今回はブレッドボードが小さかったため、ESP32の下にJump Wireを設置した)  
+
+![A](./img/espcounter.png)  
+![B](./img/espcounter2.png)  
