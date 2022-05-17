@@ -4,8 +4,8 @@
 - [概要説明](#content1)  
 - [リードスイッチの使い方](#content2)  
 - [配線接続](#content3)
-- [ESP32のセッティング](#content4)  
-- [Raspberry Piのセッティング](#content5)  
+- [ESP32のコーディング](#content4)  
+- [Raspberry Piのコーディング](#content5)  
 - [残課題](#content6)  
 
 <h2 id="content1">概要説明</h2>  
@@ -87,7 +87,7 @@ ESP32とリードスイッチの配線図の配線を行う。
 ![A](./img/espcounter.png)  
 ![B](./img/espcounter2.png)  
 
-<h2 id="content4">ESP32のセッティング</h2>  
+<h2 id="content4">ESP32のコーディング</h2>  
 
 ESP32にソースをコンパイルするIDEの使い方については以下を参照する  
 https://github.com/ksaplabo-org/ksapDoorOpener#content3  
@@ -106,7 +106,7 @@ ESP32からRaspberry PiへBluetooth接続を行うソース
 ソースコードについて参考にしたサイトを示す  
 https://taku-info.com/bleconnection-esp32andrpi/  
 
-<h2 id="content5">Raspberry Piのセッティング</h2>  
+<h2 id="content5">Raspberry Piのコーディング</h2>  
 
 Raspberry PiのOSセットアップ方法については以下を参考にする  
 https://github.com/ksaplabo-org/Raspi-Setup  
