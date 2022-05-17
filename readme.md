@@ -67,7 +67,7 @@ while True:
   上のLEDを点灯させるために使用しているのがプルダウン抵抗  
   下のDoorOpenCounterで使用しているのがプルアップ抵抗  
 
-  ちなみに上のLEDを点灯させるプルアップ抵抗をプルアップ抵抗にした場合  
+  ちなみに上のLEDを点灯させるプルダウン抵抗をプルアップ抵抗にした場合  
   配線は下のようになる  
 ![A](./img/pulup.png)  
   これで上のソースを実行した場合  
@@ -96,7 +96,9 @@ ESP32からRaspberry PiへBluetooth接続を行うソース
 [bleak.ino](./ino/bleak.ino)  
 <br>
 ～「bleak.ino」一部ソース説明～  
+26~34行目：BLEの接続時、切断時のイベント処理  
 54~56行目：LEDを点灯（ドアが開いている間LEDが点灯）  
+76~78行目：ESP32をアドバタイズ状態に移行  
 82行目   ：Bluetooth接続待ち  
 87行目   ：Bluetooth接続が成功してから3秒待つ  
 91行目   ：ESP32をDeepSleepモードにする  
@@ -144,3 +146,7 @@ Raspberry Piに以下のソースを移行し、ターミナルで「main.py」�
 - ドアを開けた時にESP32とRaspberry Piの接続が100%成功するわけではなく  
    50％くらいの確率で成功する  
 - ESP32のENピンを利用しているため、ドアが閉まる前にLEDが消灯する   
+
+<h2 id="content7">参考まとめ</h2>  
+以下のサイトにESP32とRaspberry Piの接続についてまとめています。  
+https://github.com/camelrush/esp32_samples/tree/master/esp32_ble_toRaspi  
