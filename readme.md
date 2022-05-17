@@ -113,5 +113,11 @@ Raspberry Piに以下のソースを移行し、ターミナルで「main.py」�
 
 - 「blehandler.py」  
   ESP32と接続を行うクラス  
+  44行目でESP32とのBluetooth接続ができるまで待機し  
+  できた場合、47行目のloggerクラスでMQTT通信を行う  
   
+- 「logger.py」  
+  現在時間をIoT Coreで作成したモノに向かってMQTT通信するクラス  
+  35~41行目の固定値は、自分で作成したモノに応じて変更すること  
 
+  
