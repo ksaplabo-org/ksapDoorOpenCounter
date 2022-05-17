@@ -63,4 +63,5 @@ while True:
 ESP32とリードスイッチの配線図の配線を行う。  
 
 ![A](./img/counter.png)  
-![A](./img/counter2.png)  
+
+![B](./img/Counter2.png)  
