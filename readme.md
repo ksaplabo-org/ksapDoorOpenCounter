@@ -6,6 +6,7 @@
 - [配線接続](#content3)
 - [ESP32のセッティング](#content4)  
 - [Raspberry Piのセッティング](#content5)  
+- [残課題](#content6)  
 
 <h2 id="content1">概要説明</h2>  
 
@@ -120,4 +121,7 @@ Raspberry Piに以下のソースを移行し、ターミナルで「main.py」�
   現在時間をIoT Coreで作成したモノに向かってMQTT通信するクラス  
   35~41行目の固定値は、自分で作成したモノに応じて変更すること  
 
-  
+最終的な設置は以下のようになる  
+<img alt="リードサンプル" src="./img/doorcounter.jpg" width="400" height="600">   
+
+<h2 id="content6">残課題</h2>  
