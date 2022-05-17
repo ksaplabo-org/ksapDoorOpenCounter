@@ -31,11 +31,32 @@ Raspberry PiからDynamoDBへ現在時刻をMQTT送信
 リードスイッチについて→参考サイト：https://standexelectronics.com/ja/reed-switch-technology-ja/what-is-a-reed-switch-and-how-does-it-work/  
 
 - リードスイッチを利用して、LEDライトを点灯させる  
+<br>
 回路作成  
 
 ![A](./img/リードスイッチサンプル.png)  
 <img alt="リードサンプル" src="./img/リードサンプル.jpg" width="400" height="600">   
 
+以下のサンプルソースをRaspberry Piで実行  
+[Rtest.py](./py/Rtest.py)    
+```python
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(2, GPIO.OUT)
+GPIO.setup(14, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+while True:
+    if GPIO.input(14) == 1:
+        GPIO.output(2, GPIO.HIGH)
+        print('OK')
+    else:
+        GPIO.output(2, GPIO.LOW)
+        print('NG')
+
+    time.sleep(0.5)
+```  
 
 
 
