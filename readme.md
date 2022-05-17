@@ -89,3 +89,11 @@ ESP32からRaspberry PiへBluetooth接続を行うソース
 https://taku-info.com/bleconnection-esp32andrpi/  
 
 <h2 id="content5">Raspberry Piのセッティング</h2>  
+
+Raspberry PiのOSセットアップ方法については以下を参考にする  
+https://github.com/ksaplabo-org/Raspi-Setup  
+
+Raspberry Piのターミナルで、pythonの「bleak」ライブラリをインストールする  
+```
+$ pip install bleak
+```
