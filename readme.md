@@ -39,7 +39,7 @@ Raspberry PiからDynamoDBへ現在時刻をMQTT送信
 
 以下のサンプルソースをRaspberry Piで実行→[Rtest.py](./py/Rtest.py)    
 
-```python{r, attr.source='.numberLines'}
+```python {r, attr.source='.numberLines'}
 import RPi.GPIO as GPIO
 import time
 
