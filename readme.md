@@ -77,7 +77,7 @@ ESP32にソースをコンパイルするIDEの使い方については以下を
 https://github.com/ksaplabo-org/ksapDoorOpener#content3  
 
 ESP32からRaspberry PiへBluetooth接続を行うソース  
-[bleak.ino](./ino/bleak.py)  
+[bleak.ino](./ino/bleak.ino)  
 <br>
 ～「bleak.ino」一部ソース説明～  
 54~56行目：LEDを点灯  
@@ -97,3 +97,21 @@ Raspberry Piのターミナルで、pythonの「bleak」ライブラリをイン
 ```
 $ pip install bleak
 ```
+
+「main.py」の11行目で
+対象となるESP32のMACアドレスを指定すること  
+MACアドレスの取得方法→https://mobile.k05.biz/e/2018/12/esp32-mac-addr.html  
+
+Raspberry Piに以下のソースを移行し、ターミナルで「main.py」を実行する  
+[main.py](./py/main.py)  
+[blehandler.py](./py/blehandler.py)  
+[logger.py](./py/logger.py)  
+
+- 「main.py」  
+  メイン処理  
+  5秒周期で対象のESPを探し、見つけた場合blehandlerの処理に移行する  
+
+- 「blehandler.py」  
+  ESP32と接続を行うクラス  
+  
+

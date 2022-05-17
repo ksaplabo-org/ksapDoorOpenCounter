@@ -40,10 +40,8 @@ class BleHandler():
         while True:
             print("Waiting connect to device.")
             try:
-                print(1)
                 time.sleep(5)
                 async with BleakClient(self.address, timeout=self.TIME_OUT, disconnected_callback=self._disconnect_callback) as client:
-                    print(2)
                     if await client.is_connected():
                         print("Connect to device successfuly.")
                         self.logger.write()
