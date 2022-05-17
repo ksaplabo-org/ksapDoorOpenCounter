@@ -81,7 +81,7 @@ ESP32からRaspberry PiへBluetooth接続を行うソース
 [bleak.ino](./ino/bleak.ino)  
 <br>
 ～「bleak.ino」一部ソース説明～  
-54~56行目：LEDを点灯  
+54~56行目：LEDを点灯（ドアが開いている間LEDが点灯）  
 82行目   ：Bluetooth接続待ち  
 87行目   ：Bluetooth接続が成功してから3秒待つ  
 91行目   ：ESP32をDeepSleepモードにする  
@@ -125,3 +125,7 @@ Raspberry Piに以下のソースを移行し、ターミナルで「main.py」�
 <img alt="リードサンプル" src="./img/doorcounter.jpg" width="400" height="600">   
 
 <h2 id="content6">残課題</h2>  
+
+- ドアを開けた時にESP32とRaspberry Piの接続が100%成功するわけではなく  
+   50％くらいの確率で成功する  
+- ESP32のENピンを利用しているため、ドアが閉まる前にLEDが消灯する   
