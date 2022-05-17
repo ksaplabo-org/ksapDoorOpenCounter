@@ -34,7 +34,7 @@ Raspberry PiからDynamoDBへ現在時刻をMQTT送信
 回路作成  
 
 ![A](./img/リードスイッチサンプル.png)  
-<img alt="リードサンプル" src="./img/リードサンプル.jpg" width="700" height="400">   
+<img alt="リードサンプル" src="./img/リードサンプル.jpg" width="500" height="400">   
 
 
 
