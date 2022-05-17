@@ -33,6 +33,10 @@ Raspberry PiからDynamoDBへ現在時刻をMQTT送信
 - リードスイッチを利用して、LEDライトを点灯させる  
 回路作成  
 
-![A](./img/リードスイッチサンプル.png) ![B](./img/リードサンプル.jpg)  
+![A](./img/リードスイッチサンプル.png)  
+<img alt="リードサンプル" src="./img/リードサンプル.jpg" width="700" height="400">   
+
+
+
 
 
