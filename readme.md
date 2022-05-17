@@ -73,7 +73,20 @@ ESP32とリードスイッチの配線図の配線を行う。
 
 <h2 id="content4">ESP32のセッティング</h2>  
 
+ESP32にソースをコンパイルするIDEの使い方については以下を参照する  
+https://github.com/ksaplabo-org/ksapDoorOpener#content3  
+
+
+
 以下に参考にしたサイトを示す  
 https://taku-info.com/bleconnection-esp32andrpi/
 
 ESP32からRaspberry PiへBluetooth接続を行うソース  
+[bleak.ino](./ino/bleak.py)  
+<br>
+～一部ソース説明～  
+54~56行目：LEDを点灯  
+82行目   ：Bluetooth接続待ち  
+87行目   ：Bluetooth接続が成功してから3秒待つ  
+91行目   ：ESP32をDeepSleepモードにする  
+
