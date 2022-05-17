@@ -37,8 +37,8 @@ Raspberry PiからDynamoDBへ現在時刻をMQTT送信
 ![A](./img/リードスイッチサンプル.png)  
 <img alt="リードサンプル" src="./img/リードサンプル.jpg" width="400" height="600">   
 
-以下のサンプルソースをRaspberry Piで実行  
-[Rtest.py](./py/Rtest.py)    
+以下のサンプルソースをRaspberry Piで実行→[Rtest.py](./py/Rtest.py)    
+
 ```python
 import RPi.GPIO as GPIO
 import time
@@ -57,7 +57,10 @@ while True:
 
     time.sleep(0.5)
 ```  
+リードスイッチに磁石を近づけると、LEDが点灯すればOK  
 
+<h2 id="content3">配線接続</h2>  
+ESP32とリードスイッチの配線図の配線を行う。  
 
-
-
+![A](./img/counter.png)  
+![A](./img/counter.jpg)  
