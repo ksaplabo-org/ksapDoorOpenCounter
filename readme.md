@@ -76,6 +76,7 @@ while True:
   となる  
 
 <h2 id="content3">ENピンについて</h2>  
+
 ESP32のENピンは、ESP32の再起動を行うためのピンである  
 通常  
 <br>
