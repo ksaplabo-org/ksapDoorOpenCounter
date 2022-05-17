@@ -26,8 +26,12 @@ Raspberry PiからDynamoDBへ現在時刻をMQTT送信
 リードスイッチとは...  
 ```  
 密閉されたガラス管内に2つの強磁性ブレードを含む電気機械式スイッチングデバイス  
-``` 
+```  
+
 リードスイッチについて→参考サイト：https://standexelectronics.com/ja/reed-switch-technology-ja/what-is-a-reed-switch-and-how-does-it-work/  
 
 - リードスイッチを利用して、LEDライトを点灯させる  
+回路作成  
+
+![全景](./img/リードスイッチサンプル.png)  
 
