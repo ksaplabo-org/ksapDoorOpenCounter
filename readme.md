@@ -123,9 +123,9 @@ ESP32からRaspberry PiへBluetooth接続を行うソース
 [bleak.ino](./ino/bleak.ino)  
 <br>
 ～「bleak.ino」一部ソース説明～  
-26~34行目：BLEの接続時、切断時のイベント処理  
-54~56行目：LEDを点灯（ドアが開いている間LEDが点灯）  
-76~78行目：ESP32をアドバタイズ状態に移行  
+26～34行目：BLEの接続時、切断時のイベント処理  
+54～56行目：LEDを点灯（ドアが開いている間LEDが点灯）  
+76～78行目：ESP32をアドバタイズ状態に移行  
 82行目   ：Bluetooth接続待ち  
 87行目   ：Bluetooth接続が成功してから3秒待つ  
 91行目   ：ESP32をDeepSleepモードにする  
